@@ -49,17 +49,11 @@
                               [style.margin.px]='imageMargin'>-->
                       </td>
                     <div class="grid-container">
-                      <div class="grid-item">{{ equipment.name }}</div>
-                      <div class="grid-item">{{ equipment.tierDescription }}</div>
-                      <div class="grid-item">{{ equipment.tierNumber }}</div>
-                      <div class="grid-item">{{ equipment.upgradeLevel }}</div>
-                      <div class="grid-item">{{ equipment.name }}</div>
-                      <div class="grid-item">{{ equipment.tierDescription }}</div>
-                      <div class="grid-item">{{ equipment.tierNumber }}</div>
-                      <div class="grid-item">{{ equipment.upgradeLevel }}</div>
-                      <div class="grid-item">{{ equipment.statRequirements }}</div>
-                      <div class="grid-item">{{ equipment.attack }}</div>
-                      <div class="grid-item">{{ equipment.upgradeMaterials }}</div>
+                      <div class="grid-item">Name: {{ equipment.name + " " + equipment.upgradeLevel }}</div>
+                      <div class="grid-item">Tier: {{ equipment.tierNumber }}</div>
+                      <div class="grid-item">Req: {{ equipment.statRequirements }}</div>
+                      <div class="grid-item">ATK: {{ equipment.attack }}</div>
+                      <div class="item1">Cost: {{ equipment.upgradeMaterials }}</div>
                       <div class="grid-item">{{ equipment.splithiumRequired }}</div>
                       <div class="grid-item">{{ equipment.upgradeTime }}</div>
                       <div class="grid-item">{{ equipment.durability }}</div>
